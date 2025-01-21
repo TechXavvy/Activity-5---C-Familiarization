@@ -69,9 +69,23 @@ namespace Activity_5___C__Familiarization
                     calc = new Multiplication();
                     break;
                 case "4":
+                    if (temp2 == 0)
+                    {
+                        Console.WriteLine("\nDivision by zero leads to math error!");
+                        Console.WriteLine("\nPress any key to return to the homepage.");
+                        Console.ReadKey();
+                        return null;
+                    }
                     calc = new Division();
                     break;
                 case "5":
+                    if (temp2 == 0)
+                    {
+                        Console.WriteLine("\nDivision by zero leads to math error!");
+                        Console.WriteLine("\nPress any key to return to the homepage.");
+                        Console.ReadKey();
+                        return null;
+                    }
                     calc = new Modulus();
                     break;
                 case "6":
@@ -101,7 +115,7 @@ namespace Activity_5___C__Familiarization
                     Console.WriteLine("Welcome to Piolo PasCal The Calculator! This is the homepage.");
                     Console.WriteLine("\nWhat operation would you like to do?");
                     Console.WriteLine("1. Addition");
-                    Console.WriteLine("2. Subrtaction");
+                    Console.WriteLine("2. Subtraction");
                     Console.WriteLine("3. Multiplication");
                     Console.WriteLine("4. Division");
                     Console.WriteLine("5. Modulus");
