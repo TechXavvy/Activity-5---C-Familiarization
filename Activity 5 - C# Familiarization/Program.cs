@@ -111,7 +111,7 @@ namespace Activity_5___C__Familiarization
                     Console.Write("\nChoose from 1-8: ");
                     string choice = Console.ReadLine();
 
-                    if (!int.TryParse(choice, out int userChoice) || userChoice == 0)
+                    if (!int.TryParse(choice, out int userChoice) || userChoice <= 0 || userChoice > 8)
                     {
                         Console.WriteLine("\nInvalid number! Press any key to return to the homepage.");
                         Console.ReadKey();
